@@ -1,0 +1,114 @@
+To create a variable that should store text,  
+look at the following example: 
+Example 
+Create a variable called name of 
+type String and assign it the value "John": 
+String name = "John"; 
+System.out.println(name); 
+You can also declare a variable without assigning the value, and assign the value later: 
+Example 
+int myNum; 
+myNum = 15; 
+System.out.println(myNum); 
+Note that if you assign a new value to an existing variable, it will overwrite the previous value: 
+Example 
+Change the value of myNum from 15 to 20: 
+int myNum = 15; 
+myNum = 20;  // myNum is now 20 
+System.out.println(myNum); 
+ 
+To create a variable that should store a number, 
+look at the following  
+Example 
+Create a variable called myNum of 
+type int and assign it the value 15 
+int myNum = 15; 
+System.out.println(myNum); 
+Final Variables 
+If you don't want others (or yourself) to overwrite existing values, use the final keyword (this will 
+declare the variable as "final" or "constant", which means unchangeable and read-only): 
+Example 
+final int myNum = 15; 
+myNum = 20;  // will generate an error: cannot assign a value to a final 
+variable 
+ 
+Other Types 
+A demonstration of how to declare variables of other types: 
+Example 
+int myNum = 5; 
+float myFloatNum = 5.99f; 
+char myLetter = 'D'; 
+boolean myBool = true; 
+String myText = "Hello"; The "inner loop" will be executed one time for each iteration of the "outer loop": 
+Example 
+// Outer loop 
+for (int i = 1; i <= 2; i++) { 
+  System.out.println("Outer: " + i); // Executes 2 times 
+   
+// Inner loop 
+  for (int j = 1; j <= 3; j++) { 
+    System.out.println(" Inner: " + j); // Executes 6 times (2 * 3) 
+  } 
+} While Loop 
+You can also use break and continue in while loops: 
+Break Example 
+int i = 0; 
+while (i < 10) { 
+  System.out.println(i); 
+  i++; 
+  if (i == 4) { 
+    break; 
+  } 
+}  
+Exercise: 
+Stop the loop if i is 5. 
+for (int i = 0; i < 10; i++) { 
+  if (i == 5) {    
+    
+; 
+  } 
+  System.out.println(i); 
+} 
+ 
+Continue Example 
+int i = 0; 
+while (i < 10) { 
+  if (i == 4) { 
+    i++; 
+    continue; 
+  } 
+  System.out.println(i); 
+  i++; 
+} int y = 9; 
+System.out.println(x > y); // returns true, because 10 is higher than 9 
+Or even easier: 
+Example 
+System.out.println(10 > 9); // returns true, because 10 is higher than 9 In the examples below, we use the equal to (==) operator to evaluate an expression: 
+Example 
+int x = 10; 
+System.out.println(x == 10); // returns true, because the value of x is equal to 10 
+Example 
+System.out.println(10 == 15); // returns false, because 10 is not equal to 15 
+Real Life Example 
+Let's think of a "real life example" where we need to find out if a person is old enough to vote. %= 3 
+x = x % 3 
+&= 
+x &= 3 
+x = x & 3 
+|= 
+x |= 3 
+x = x | 3 
+^= 
+x ^= 3 
+x = x ^ 3 
+>>= 
+x >>= 3 
+x = x >> 3 
+<<= 
+x Java For Each Loop 
+For-Each Loop 
+There is also a "for-each" loop, which is used exclusively to loop through elements in an array: 
+Syntax 
+for (type variableName : arrayName) { 
+  // code block to be executed 
+}
